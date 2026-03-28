@@ -10,4 +10,4 @@ def cosine_similarity(a, b):
     norm_a, norm_b = LA.norm(a), LA.norm(b)
     if norm_a == 0.0 or norm_b == 0.0:
         return 0.0
-    return np.dot(a, b) / ( norm_a * norm_b )
+    return np.dot(a / norm_a, b / norm_b)
