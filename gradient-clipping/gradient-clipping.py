@@ -8,6 +8,7 @@ def clip_gradients(g, max_norm):
 
     if max_norm <= 0:
         return g
+        
     g_norm = np.sqrt(np.sum(g ** 2))
     
     return g if g_norm <= max_norm else g * max_norm / g_norm
