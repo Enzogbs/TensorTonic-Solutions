@@ -6,5 +6,5 @@ def make_diagonal(v):
     """
     v = np.array(v)
     matrix = np.eye(v.shape[0])
-
+    
     return matrix * v
